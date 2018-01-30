@@ -1,0 +1,36 @@
+doctype html
+html(lang="RU-ru")
+    head
+        meta(charset="utf-8")
+        meta(content="width=device-width, initial-scale=1" name="viewport")
+        meta(content="ie=edge" http-equiv="x-ua-compatible")
+
+        block title
+        title Test for Leningrad Agency
+
+
+        link(rel='stylesheet' href='/assets/css/foundation.css')
+        link(rel='stylesheet' href='/assets/css/app.css')
+
+    body
+
+        form.form(name="myForm" action='#' method='GET')
+
+            h1.title__form Форма авторизации
+            .form-row__up
+                input.form__mail(type='email' name='mail' placeholder='Email' required)
+                input.form__password(type='password' name='password' placeholder='Пароль' required)
+            .form-row__down
+                .form__session
+                    .title__form-session Продолжительность сессии:
+                        br
+                        input.session__checkbox(type='checkbox' name='session' value='30')
+                        | 30
+                        input.session__checkbox(type='checkbox' name='session' value='60')
+                        | 60
+                .form__button
+                    button.button-send(type='submit') подтверждаю
+
+
+
+
